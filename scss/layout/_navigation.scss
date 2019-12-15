@@ -1,0 +1,26 @@
+.nav {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 320px;
+    box-shadow: 0 0 6px 0;
+    padding: 8px 14px 8px 20px;
+    // border: 1px solid green;
+    display: grid;
+    grid-template-columns: 198px 20px 20px 20px 20px;
+    grid-template-rows: 100%;
+    img.nav__anchor_p-t {
+        margin-top: 16px;
+    }
+    @include breakpoint(large) {
+        box-sizing: border-box !important;
+        width: 1150px;
+        margin: 0 auto;
+        padding: 20px 110px 26px 188px;
+        box-shadow: 0 0 6px 0;
+        grid-template-columns: 280px 140px 140px 140px 140px;
+        grid-template-rows: 100%;
+        img.nav__anchor_p-t {
+            margin-top: 16px;
+        }
+    }
+}

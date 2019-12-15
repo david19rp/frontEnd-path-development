@@ -1,0 +1,11 @@
+//breakpoint
+$breakpoints:( small:499px, medium:899px, large:1024px, );
+//creacion del mixin
+@mixin breakpoint ($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+    //mediaquery 
+    @media screen and ( min-width: $breakpoint-value) {
+        // @content; se agrega la directiva de sass @content, solo agreguela
+        @content;
+    }
+}
